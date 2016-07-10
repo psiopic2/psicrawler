@@ -13,7 +13,7 @@ $ git clone https://github.com/psiopic2/psicrawler.git
 $ cd psicrawler
 $ virtualenv -p python3 env
 $ source env/bin/activate
-$ pip install -r requirements.txt
+$ pip install -r requirements/psicrawler.txt
 ```
 
 ## Available crawl jobs

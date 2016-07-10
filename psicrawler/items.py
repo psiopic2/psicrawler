@@ -15,6 +15,8 @@ def from_xml(xmlfile):
     topics = []
     for topic in e.iter('topic'):
         topics.append(topic.text)
+        
+    topics = tuple(topics)
 
     title = e.findall('title')[0].text
     url = e.findall('url')[0].text
