@@ -91,3 +91,6 @@ ENV/
 /.pydevproject
 /xmlfiles/
 /.settings/
+
+# Vim stuff
+*.swp
