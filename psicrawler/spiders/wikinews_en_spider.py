@@ -1,11 +1,11 @@
-import scrapy
+"""
+Crawl job for Wikinews English
+
+https://en.wikinews.org
+"""
 from scrapy.spiders import Rule
 from scrapy.linkextractors import LinkExtractor
-from newspaper import Article, Config
 from psicrawler.spiders.default_spider import DefaultSpider
-import os
-# archive lists
-# https://en.wikinews.org/wiki/Wikinews:[year]/[month]/[date]
 
 class WikinewsEnSpider(DefaultSpider):
     name = "wikinews_en"
