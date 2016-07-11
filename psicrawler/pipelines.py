@@ -12,7 +12,7 @@ class PsicrawlerPipeline(object):
             targetDir = self.get_base_path()
 
             firstLetter = item['title'][0].lower()
-            targetDir += '/' + firstLetter
+            targetDir += '/' + item['source'] + '/' + firstLetter
 
             if os.path.exists(targetDir) == False:
                 os.makedirs(targetDir)
