@@ -3,10 +3,13 @@ import os
 
 class PsicrawlerPipeline(object):
     
+    def get_base_path(self):
+        return os.path.dirname(os.path.realpath(__file__)) + "/../xmlfiles"
+    
     def write_item(self, item):
 
         if len(item['topics']) > 0:
-            targetDir = os.path.dirname(os.path.realpath(__file__)) + '/../xmlfiles'
+            targetDir = self.get_base_path()
 
             firstLetter = item['title'][0].lower()
             targetDir += '/' + firstLetter
