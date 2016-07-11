@@ -38,8 +38,6 @@ class AustralianBroadcastCorpArchivesSpider(DefaultSpider):
         'Crime': 'Law',
         'police': 'Law'
     }
-    
-    allowed_topics = None
 
     # allowed_topics = None
 
